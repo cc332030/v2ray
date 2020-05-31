@@ -1,5 +1,5 @@
 
-APP_HOME=/home/root/program
+APP_HOME=/home/program
 
 USER=v2ray
 IMAGE=official
