@@ -21,7 +21,7 @@ docker rm $name
 docker run -d \
   \
   --privileged=true \
-  --restart on-failure:3 \
+  --restart unless-stopped \
   --log-opt max-size=10m \
   --log-opt max-file=3 \
   \
