@@ -5,7 +5,7 @@
     "loglevel": "warning"
   },
   "inbounds": [{
-    "port": 8001,
+    "port": 8002,
     "protocol": "vmess",
     "settings": {
       "clients": [
@@ -15,6 +15,12 @@
           "alterId": 64
         }
       ]
+    },
+    "streamSettings": {
+      "network": "ws",
+      "wsSettings": {
+        "path": "/ray"
+      }
     }
   }],
   "outbounds": [{
