@@ -1,11 +1,11 @@
 {
   "log" : {
-    "access": "/var/log/v2ray/access.log",
-    "error": "/var/log/v2ray/error.log",
-    "loglevel": "warning"
+    "access": "/etc/v2ray/logs/access.log",
+    "error": "/etc/v2ray/logs/error.log",
+    "loglevel": "info"
   },
   "inbounds": [{
-    "port": 8002,
+    "port": 84,
     "protocol": "vmess",
     "settings": {
       "clients": [
@@ -19,7 +19,7 @@
     "streamSettings": {
       "network": "ws",
       "wsSettings": {
-        "path": "/ray"
+        "path": "/ws"
       }
     }
   }],
